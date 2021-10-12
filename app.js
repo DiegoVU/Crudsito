@@ -24,6 +24,7 @@ app.set('view engine', 'ejs')
 
 var index = require('./routes/index')
 var users = require('./routes/users')
+app.set('port', process.env.PORT || 5000);
 
 
  
@@ -71,7 +72,6 @@ app.use('/users', users)
 
 app.use(express.static(path.join(__dirname, './public')));
 
-app.listen(3000, function(){
-	console.log('Server running at port 3000: http://127.0.0.1:3000')
-})
-
+app.listen(app.get('port'), () => {
+	console.log(`Servidor escuchando desde el puerto  ${app.get('port')}`);
+});
