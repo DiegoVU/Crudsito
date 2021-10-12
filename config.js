@@ -1,10 +1,10 @@
 var config = {
 	database: {
-		host:	  'localhost', 	
-		user: 	  'root', 		
-		password: 'Root', 		
+		host:	  'mysql-diegovu.alwaysdata.net', 	
+		user: 	  'diegovu_free', 		
+		password: 'ddiieeggoo', 		
 		port: 	  3306, 		
-		db: 	  'crud' 		
+		db: 	  'diegovu_crud' 		
 	},
 	server: {
 		host: '127.0.0.1',
